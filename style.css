@@ -245,8 +245,6 @@ background-color: #351165;
 .choose-section {
     width: 1200px;
     height: 785px;
-/* align-items: center;
-justify-items: center; */
 margin: 0 auto;
 display: grid;
     gap: 30px;
@@ -310,6 +308,11 @@ padding: 10px;
 .time-section p {
     color: #00FF88;
     font-weight: 600;
+}
+.yt-cards:hover {
+    background-color: #1A0B2E;
+    border: 2px solid #351165;
+    transition: .2s ease-in-out;
 }
 /* Host Section */
 .host h2 {

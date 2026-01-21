@@ -41,7 +41,7 @@ nav {
     font-weight: 800;
     color: white;
 }
-.logo-span {
+.logo-span, footer h2 span {
   background: linear-gradient(45.6deg, #44caff 0%, #718dff 16.6%, #a056f4 33.3%, #df32c6 50%, #ff2094 66.6%, #ff3b64 83.3%, #ff663f 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -132,8 +132,8 @@ border-radius: 20px;
     font-weight: 600;
 }
 .btn:hover {
-    transform: translate(-10px);
-transition: tranform 2s ease-in-out;
+    transform: translate(-7px);
+transition: transform .21s ease-in-out;
 background: linear-gradient(45.6deg, #44caff 0%, #718dff 16.6%, #a056f4 33.3%, #df32c6 50%, #ff2094 66.6%, #ff3b64 83.3%, #ff663f 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -187,4 +187,304 @@ margin-bottom: 100px;
     color: white;
     opacity: .7;
     text-transform: uppercase;
+}
+/* Choose section */
+.choose {
+    background-color: #230E3D ;
+    padding: 120px 200px 250px 200px;
+ margin-bottom: 200px;
+}
+.choose h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+.choose-div-1 {
+grid-area: audio;
+background-color: #351165;
+border-radius: 40px;
+padding: 180px 80px;
+}
+
+.choose-div-2 {
+    padding: 50px;
+    border-radius: 40px;
+    grid-area: device;
+    background-color: #351165;
+    
+}
+.choose-div-3 {
+    border-radius: 40px;
+    padding: 70px;
+    grid-area: global;
+    background-color: #351165;
+    
+    
+    
+}
+.choose-div-4 {
+    border-radius: 40px;
+    padding: 50px;
+    grid-area: exclusive;
+    background-color: #351165;
+    
+}
+
+.choose-div-5 {
+    border-radius: 40px;
+    padding: 70px 50px;
+    grid-area: rich;
+background-color: #351165;
+    
+}
+.choose-section {
+    width: 1200px;
+    height: 785px;
+/* align-items: center;
+justify-items: center; */
+margin: 0 auto;
+display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "audio device device"
+    "audio global global"
+    "exclusive exclusive rich";
+}
+.choose-section h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-left: 0;
+}
+.choose-section p {
+    color: white;
+    opacity: .7;
+}
+.choose-div:hover {
+    transition: .3s ease-in-out;
+    background-color: #1A0B2E;
+}
+/* yt card  */
+.yt-card h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.yt-card-div {
+justify-content: center;
+gap: 40px;
+}
+.yt-cards {
+    border-radius: 15px;
+    background-color: #250D44 ;
+max-width: 380px;
+}
+.yt-cards iframe {
+    border-radius: 8px;
+}
+.yt-cards h3 {
+    color: white;
+font-size: 1.5rem;
+font-weight: 600;
+margin: 20px 0;
+padding: 10px;
+}
+.yt-cards p {
+    color: white;
+    opacity: .7;
+    padding: 10px;
+}
+.time-section {
+    display: flex;
+   padding: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.time-section p {
+    color: #00FF88;
+    font-weight: 600;
+}
+/* Host Section */
+.host h2 {
+    margin: 80px 40px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+}
+.host-section {
+    background-color: #3511658b;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+.host-section:hover {
+    background-color: #1A0B2E;
+    border: 2px solid #3511658b;
+    transition: .5s ease-in-out;
+}
+.host-section h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+font-weight: 700;
+}
+.host-section p {
+    color: white;
+    opacity: .7;
+margin-bottom: 20px;
+
+}
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.socials img {
+    border: 1px solid #343745;
+padding: 8px;
+border-radius: 50%;
+}
+
+/* Footer section  */
+footer {
+    background-image: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+footer h2 {
+color: white;
+font-size: 4rem;
+font-weight: 800;
+padding-top:  120px ;
+}
+.social-things {
+    justify-content: center;
+}
+footer p {
+    color: white;
+    opacity: .7;
+}
+.social-platform {
+    gap: 10px;
+    margin: 30px 40px 30px 0 ;
+
+}
+.copyright {
+padding: 40px 0 120px 0;
+
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    
+    /* Global Adjustments */
+    nav, .podcast, .choose, .host-section, .yt-card-div {
+        margin: 10px 20px !important; /* Reduces the large 200px margins from desktop */
+        padding: 20px !important;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column; /* Stacks logo, links, and button vertically */
+        gap: 15px;
+    }
+    nav ul {
+        padding-left: 0;
+        justify-content: center;
+    }
+    nav ul li a {
+        margin-right: 15px;
+    }
+
+    /* Hero Section */
+    .hero-bg {
+        width: 300px; /* Smaller circle for mobile */
+        height: 300px;
+        margin-top: 50px;
+    }
+    .hero-bg .new {
+        left: 210px; /* Re-position the "New" badge */
+        padding: 8px 15px;
+    }
+    .hero-text h2 {
+        font-size: 2.5rem; /* Shrink title size */
+    }
+    .hero-button {
+        flex-direction: column; /* Stack "Listen" and "Subscribe" buttons */
+        width: 100%;
+        align-items: center;
+    }
+
+    /* About Section */
+    .about {
+        padding: 0; /* Remove the 400px side padding */
+    }
+    .num-card-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2x2 grid for stats */
+        gap: 20px;
+    }
+
+    /* Why Choose TechWave (Grid to Column) */
+    .choose-section {
+        display: flex;
+        flex-direction: column; /* Stack all cards vertically */
+        height: auto;
+        width: 100%;
+    }
+    .choose-div {
+        padding: 30px !important; /* Uniform padding for all boxes */
+    }
+
+    /* Featured Episodes */
+    .yt-card-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .yt-cards {
+        width: 100%;
+        max-width: 100%;
+    }
+    .yt-cards iframe {
+        width: 100%; /* Make video fill the width */
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Host Section */
+    .host-section {
+        flex-direction: column; /* Stack host image and bio */
+        text-align: center;
+    }
+    .host-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    /* Footer */
+    /* footer {
+        background-image: url(assets/footer-bg.png), url(assets/footer-bg.png);
+        
+    } */
+    footer h2 {
+        font-size: 2.5rem;
+    }
+    .social-things {
+        flex-wrap: wrap; /* Wrap icons if they don't fit */
+        gap: 10px;
+    }
+    .social-platform {
+        margin: 10px;
+    }
 }

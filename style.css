@@ -36,6 +36,9 @@ nav {
     margin: 10px 200px;
     align-items: center;
 }
+.logo-div img {
+    display: none;
+}
 .logo-title {
     font-size: 2.8rem;
     font-weight: 800;
@@ -69,8 +72,8 @@ background-size: cover;
 }
 .hero-bg {
     background-image: url(assets/hero-circle.png);
-   width: 500px;
-   height: 500px;
+   width: 400px;
+   height: 400px;
    justify-content: center;
    align-items: center;
    margin-top: 160px;
@@ -81,7 +84,7 @@ background-size: cover;
 .hero-bg .new {
 position: absolute;
 top: 30px;
-left: 400px;
+left: 320px;
 border:2px solid rgba(0, 255, 136, 1);
 color: black;
 background: rgba(0, 255, 136, 1);
@@ -384,107 +387,197 @@ padding: 40px 0 120px 0;
 
 }
 
-/* Responsive */
 @media screen and (max-width: 576px) {
-    
-    /* Global Adjustments */
-    nav, .podcast, .choose, .host-section, .yt-card-div {
-        margin: 10px 20px !important; /* Reduces the large 200px margins from desktop */
-        padding: 20px !important;
-    }
 
-    /* Navbar */
-    nav {
-        flex-direction: column; /* Stacks logo, links, and button vertically */
-        gap: 15px;
+
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px;
+  }
+  .logo-div {
+      display: flex;
+      align-items: center; 
+      gap: 70%;
+    }
+    .logo-div img {
+        display: block;
+        height: 15px;
     }
     nav ul {
-        padding-left: 0;
-        justify-content: center;
+        display: none; 
     }
-    nav ul li a {
-        margin-right: 15px;
-    }
-
-    /* Hero Section */
-    .hero-bg {
-        width: 300px; /* Smaller circle for mobile */
-        height: 300px;
-        margin-top: 50px;
-    }
-    .hero-bg .new {
-        left: 210px; /* Re-position the "New" badge */
-        padding: 8px 15px;
-    }
-    .hero-text h2 {
-        font-size: 2.5rem; /* Shrink title size */
-    }
-    .hero-button {
-        flex-direction: column; /* Stack "Listen" and "Subscribe" buttons */
-        width: 100%;
-        align-items: center;
+    nav ul li a, nav .btn {
+      display: none;
     }
 
-    /* About Section */
-    .about {
-        padding: 0; /* Remove the 400px side padding */
-    }
-    .num-card-div {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 2x2 grid for stats */
-        gap: 20px;
-    }
+  nav .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
 
-    /* Why Choose TechWave (Grid to Column) */
-    .choose-section {
-        display: flex;
-        flex-direction: column; /* Stack all cards vertically */
-        height: auto;
-        width: 100%;
-    }
-    .choose-div {
-        padding: 30px !important; /* Uniform padding for all boxes */
-    }
+  .logo-title {
+    font-size: 1.8rem;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
 
-    /* Featured Episodes */
-    .yt-card-div {
-        flex-direction: column;
-        align-items: center;
-    }
-    .yt-cards {
-        width: 100%;
-        max-width: 100%;
-    }
-    .yt-cards iframe {
-        width: 100%; /* Make video fill the width */
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+  .hero-bg {
+    width: 260px;
+    height: 260px;
+    margin-top: 40px;
+  }
 
-    /* Host Section */
-    .host-section {
-        flex-direction: column; /* Stack host image and bio */
-        text-align: center;
-    }
-    .host-img img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-    }
+  .hero-bg img {
+    width: 70px;
+  }
 
-    /* Footer */
-    /* footer {
-        background-image: url(assets/footer-bg.png), url(assets/footer-bg.png);
-        
-    } */
-    footer h2 {
-        font-size: 2.5rem;
-    }
-    .social-things {
-        flex-wrap: wrap; /* Wrap icons if they don't fit */
-        gap: 10px;
-    }
-    .social-platform {
-        margin: 10px;
-    }
+  .hero-bg .new {
+    top: 15px;
+    left: auto;
+    right: -10px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .hero-button {
+    flex-direction: row;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .hero-button button {
+    width: 100%;
+    justify-content: center;
+  }
+  .podcast {
+    margin: 40px 0;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .num-card-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .num-card h3 {
+    font-size: 2rem;
+  }
+
+  .choose {
+    padding: 60px 16px 80px 16px;
+    margin-bottom: 80px;
+  }
+
+  .choose-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .choose-div {
+    padding: 28px !important;
+    border-radius: 24px;
+  }
+
+  .choose-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .choose-section p {
+    font-size: 0.9rem;
+    line-height: 24px;
+  }
+
+  .yt-card-div {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .yt-cards {
+    max-width: 100%;
+  }
+
+  .yt-cards iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .yt-cards h3 {
+    font-size: 1.2rem;
+  }
+  .host-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .host-img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
+  .host-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  footer h2 {
+    font-size: 2.5rem;
+  }
+
+  .social-things {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   
+   justify-items: center;
+  }
+
+  .social-platform {
+    margin: 10px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    padding-bottom: 60px;
+  }
 }
